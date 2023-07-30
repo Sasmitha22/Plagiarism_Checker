@@ -5,6 +5,6 @@ The input module allows users to compare two documents by providing URLs, pastin
 
 
 
-download the file zip
-install all the required packages inside the plagiarism folder
+download the file zip;
+install all the required packages inside the plagiarism folder;
 run app.py
