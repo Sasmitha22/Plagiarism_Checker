@@ -18,7 +18,7 @@ pdf.set_font("Arial", size = 15)
 
 app = Flask(__name__)
 client=MongoClient()
-client=MongoClient('mongodb://localhost:27017/')
+client=MongoClient("mongodb://mongo:Az9PXoD6MNZrOOe6clcV@containers-us-west-144.railway.app:7025")
 
 db=client['Plagarism']
 app.secret_key = 'password'
