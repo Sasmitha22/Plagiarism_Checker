@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plagarism</title>
+    <link rel="stylesheet" href="/static/history.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="head">
+      <a class="logo">Copaste Cookie</a>
+      <nav class="navbar">
+        <a href="home" class="Home">Home</a>
+        <a href="about" class="about">About</a>
+        <a href="history" class="tool">Team </a>
+        <a href="#" class="tool">My Account</a>
+      </nav>
+    </header>
+    <section class="history">
+        <div class="container">
+            <h2 class="headh2">History</h2>
+            {% for i in range(no_of_box) %}
+              <div class="boxes"><h3>Date:{{hist3[i]}}</h3><p>Document-1 Plagarism percentage: {{hist1[i]}}     Document-2 Plagarism percentage: {{hist2[i]}}</p></p></div>
+            {% endfor %}
+            <!-- <div class="boxes"><h3>Date:22-06-2023</h3><p>Document-1 Plagarism percentage: 50%       Document-2 Plagarism percentage: 50%</p></p></div>
+            <div class="boxes"><h3>Date:22-06-2023</h3><p>Document-1 Plagarism percentage: 50%       Document-2 Plagarism percentage: 50%</p></p></div>
+            <div class="boxes"><h3>Date:22-06-2023</h3><p>Document-1 Plagarism percentage: 50%       Document-2 Plagarism percentage: 50%</p></p></div>
+            <div class="boxes"><h3>Date:22-06-2023</h3><p>Document-1 Plagarism percentage: 50%       Document-2 Plagarism percentage: 50%</p></p></div>
+            <div class="boxes"><h3>Date:22-06-2023</h3><p>Document-11 Plagarism percentage: 50%       Document-2 Plagarism percentage: 50%</p></p></div> -->
+        </div>
+    </section>
+    <footer>
+      <div class="boxes-foot">
+        <h2>Sujay</h2>
+        <p>Project Owner</p>
+        <div class="links">
+          <i class='bx bxl-linkedin'></i><a href="#">Linkedin</a>
+          <i class='bx bxl-facebook-circle'></i><a href="#">Facebook</a>
+          <i class='bx bxl-twitter' ></i><a href="#">Twiiter</a>
+          <i class='bx bxl-whatsapp'></i><a href="#">WhatsApp</a>
+        </div>
+      </div>
+      <div class="boxes-foot">
+        <h2>Sudhakaran</h2>
+        <p>Developer</p>
+        <div class="links">
+          <i class='bx bxl-linkedin'></i><a href="http://www.linkedin.com/in/sujay-r-85a878250">Linkedin</a>
+          <i class='bx bxl-facebook-circle'></i><a href="#">Facebook</a>
+          <i class='bx bxl-twitter' ></i><a href="#">Twiiter</a>
+          <i class='bx bxl-whatsapp'></i><a href="#">WhatsApp</a>
+        </div>
+      </div>
+      <div class="boxes-foot">
+        <h2>Thanuja</h2>
+        <p>Scrum Master</p>
+        <div class="links">
+          <i class='bx bxl-linkedin'></i><a href="https://www.linkedin.com/in/sudhakaran-gt">Linkedin</a>
+          <i class='bx bxl-facebook-circle'></i><a href="https://www.facebook.com/">Facebook</a>
+          <i class='bx bxl-twitter' ></i><a href="https://twitter.com/GT_Sudhakaran">Twiiter</a>
+          <i class='bx bxl-whatsapp'></i><a href="+91 9952655991">WhatsApp</a>
+        </div>
+      </div>
+      <div class="boxes-foot">
+        <h2>Tejaswini</h2>
+        <p>Developer</p>
+        <div class="links">
+          <i class='bx bxl-linkedin'></i><a href="#">Linkedin</a>
+          <i class='bx bxl-facebook-circle'></i><a href="#">Facebook</a>
+          <i class='bx bxl-twitter' ></i><a href="#">Twiiter</a>
+          <i class='bx bxl-whatsapp'></i><a href="#">WhatsApp</a>
+        </div>
+      </div>
+      <div class="boxes-foot">
+        <h2>Swetha</h2>
+        <p>Developer</p>
+        <div class="links">
+          <i class='bx bxl-linkedin'></i><a href="#">Linkedin</a>
+          <i class='bx bxl-facebook-circle'></i><a href="#">Facebook</a>
+          <i class='bx bxl-twitter' ></i><a href="#">Twiiter</a>
+          <i class='bx bxl-whatsapp'></i><a href="#">WhatsApp</a>
+        </div>
+      </div>
+      <div class="boxes-foot">
+        <h2>Tejsree</h2>
+        <p>Tester</p>
+        <div class="links">
+          <i class='bx bxl-linkedin'></i><a href="#">Linkedin</a>
+          <i class='bx bxl-facebook-circle'></i><a href="#">Facebook</a>
+          <i class='bx bxl-twitter' ></i><a href="#">Twiiter</a>
+          <i class='bx bxl-whatsapp'></i><a href="#">WhatsApp</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

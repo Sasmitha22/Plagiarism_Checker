@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plagarism</title>
+    <link rel="stylesheet" href="/static/singin.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="head">
+      <a class="logo">Copaste Cookie</a>
+      <nav class="navbar">
+        <a href="home" class="Home">Home</a>
+        <a href="about" class="about">About</a>
+        <a href="#" class="about">Team</a>
+        <a href="signup" class="tool">Sign up </a>
+      </nav>
+    </header>
+    <section class="login">
+      <div class="signinimg">
+        <img src="/static/images/objects3.svg" alt=" plagarism" />
+      </div>
+      <div class="Copaste-cookie-plagiarism-container">
+        <p class="Copaste-cookie-plagiarism">
+          Copaste cookie plagiarism checker detects plagiarism in your
+          text checks for other writing issues and helps you build citations
+        </p>
+      </div>
+      <div class="bigshape"></div>
+      <div class="shape"></div>
+      <form class="form" method="POST" action="signin">
+        <div class="signin-con" id="sigin">
+          <div class="top">
+            <span>Don't have an Account?<a href="signup">Sign up</a></span>
+            <h1>Sign in</h1>
+          </div>
+          <div class="input-box">
+            <input type="text" class="field" name="username" placeholder="Username or E-Mail" />
+            <i class="bx bx-user"></i>
+          </div>
+          <div class="input-box">
+            <input type="password" name="password" class="field" placeholder="Password" />
+            <i class="bx bx-lock-alt"></i>
+          </div>
+          <div class="input-box">
+            <input type="submit" class="submit" value="register" />
+          </div>
+          <div class="two-col">
+            <div class="one">
+              <input type="radio" class="signin-checkbox" />
+              <label for="signin-checkbox">Remember Me</label>
+            </div>
+            <div class="two">
+              <a href="#" class="fp">|Forget Password</a>
+            </div>
+          </div>
+          <div class="result"><p>{{ result }}</p></div>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>

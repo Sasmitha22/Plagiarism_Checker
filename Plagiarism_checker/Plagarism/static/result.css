@@ -1,0 +1,202 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Poppins', 'sans-serif';
+}
+
+:root {
+  --bg-color: linear-gradient(118.98deg, #000000 -2.11%, #6737C1 63.58%);
+  --text-color: white;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+section {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 7.5rem;
+  height: 57.4375rem;
+  mix-blend-mode: normal;
+  opacity: 0.9;
+}
+
+body {
+  background-image: url(/static/images/mesh-757.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  cursor: default;
+}
+
+.logoimg {
+  position: absolute;
+  width: 5.5rem;
+  height: 5.0625rem;
+  left: 3.125rem;
+  top: calc(50% - 5.0625rem / 2 - 0.03125rem);
+  z-index: 30;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background: none;
+  height: 6.25rem;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.navbar a {
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  margin-left: 3.5rem;
+  transition: 0.3s;
+  padding-right: 1.875rem;
+  font-weight: bold;
+}
+
+.navbar {
+  margin-right: 6.875rem;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: rgba(251, 128, 255, 0.623);
+  transform: scale(0.2rem);
+  text-shadow: 0.125rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.container {
+  position: absolute;
+  top: 1.25rem;
+  left: 14rem;
+  background-color: rgba(255, 255, 255, 0.13);
+  box-shadow: 0.125rem 0.125rem 0.125rem 0.125rem rgba(255, 255, 255, 0.13);
+  border: 0.125rem solid white;
+  width: 93.75rem;
+  height: 50rem;
+  border-radius: 1.25rem;
+  padding: 3.125rem 3.125rem 3.125rem 3.125rem;
+}
+
+.headh2 {
+  position: relative;
+  font-size: 4.6875rem;
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+  border-radius: 1.25rem;
+  margin-left: 34.375rem;
+}
+
+.textarea {
+  position: relative;
+  width: 97%;
+  height: 50%;
+  background: linear-gradient(rgba(255, 255, 255, 0.334), rgba(255, 167, 226, 0.556));
+  border: 0.125rem solid white;
+  padding: 1.25rem 0.625rem 0.625rem 1.875rem;
+  margin: 1.25rem 1.25rem 1.25rem 1.25rem;
+  border-radius: 1.25rem;
+  display: flex;
+  overflow-y: scroll;
+}
+
+.text {
+  width: 50%;
+  overflow-x: wrap;
+}
+
+.percentage {
+  position: relative;
+  width: 97%;
+  height: 20%;
+  background: linear-gradient(rgba(255, 255, 255, 0.334), rgba(255, 167, 226, 0.556));
+  border: 0.125rem solid white;
+  padding: 1.25rem 0.625rem 0.625rem 1.875rem;
+  margin: 1.25rem 1.25rem 1.25rem 1.25rem;
+  border-radius: 1.25rem;
+  display: flex;
+}
+
+.boxes {
+  width: 50%;
+  padding: 0.0625rem 0.625rem 0.625rem 0.625rem;
+}
+
+.submitbutton {
+  position: relative;
+}
+
+.submit {
+  margin-top: 0.625rem;
+  position: absolute;
+  left: 20.625rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: white;
+  height: 2.8125rem;
+  width: 50%;
+  border: none;
+  border-radius: 1.875rem;
+  background: black;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.submit:hover {
+  background: palevioletred;
+}
+
+footer {
+  height: 25rem;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0.625rem 0.625rem 0.625rem 0.625rem;
+  border: 0.1875rem solid black;
+}
+
+.boxes-foot {
+  position: relative;
+  width: 50%;
+  display: inline;
+  padding: 0.625rem 0.625rem 0.625rem 0.625rem;
+}
+
+.links {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding: 0.625rem 0.625rem 0.625rem 0.625rem;
+}
+
+.links a {
+  color: black;
+  display: block;
+}

@@ -1,0 +1,255 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', 'sans-serif';
+}
+
+:root {
+  --bg-color: linear-gradient(118.98deg, #000000 -2.11%, #6737C1 63.58%);
+  --text-color: white;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+section {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 7.5rem; /* converted from 120px */
+  height: 57.4375rem; /* converted from 919px */
+  mix-blend-mode: normal;
+  opacity: 0.9;
+}
+
+body {
+  background-image: url(/static/images/mesh-757.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  cursor: default;
+}
+
+.logoimg {
+  position: absolute;
+  width: 5.5rem; /* converted from 88px */
+  height: 5.0625rem; /* converted from 81px */
+  left: 3.125rem; /* converted from 50px */
+  top: calc(50% - 5.0625rem / 2 - 0.5px);
+  z-index: 30;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background: none;
+  height: 6.25rem; /* converted from 100px */
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.navbar a {
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  margin-left: 3.5rem;
+  transition: 0.3s;
+  padding-right: 1.875rem; /* converted from 30px */
+  font-weight: bold;
+}
+
+.navbar {
+  margin-right: 6.875rem; /* converted from 110px */
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: rgba(251, 128, 255, 0.623);
+  transform: scale(0.2);
+  text-shadow: 2rem;
+}
+
+/*--------------navbar---------------*/
+.signinimg {
+  position: absolute;
+  width: 37.5rem;
+  height: 31.25rem;
+  left: 3.3125rem;
+  top: 3.125rem;
+}
+
+.signin-con {
+  position: absolute;
+  width: 31.25rem;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s ease-in-out;
+}
+
+.form {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 43.75rem;
+  height: 31.25rem;
+  overflow: hidden;
+  top: 9.375rem;
+  left: 68.75rem;
+  z-index: 2;
+  transition: 0.2s ease-in-out;
+  background: linear-gradient(rgba(255, 255, 255, 0.334), rgba(255, 167, 226, 0.556));
+  border-radius: 1.0625rem;
+  padding: 1.25rem;
+  border: 0.125rem solid #ffffff55;
+}
+
+.form:hover {
+  transform: scale(1.0125);
+}
+
+.top span {
+  color: var(--bg-color);
+  font-size: medium;
+  padding: 0.625rem 0 0 8.125rem;
+}
+
+.top span a {
+  font-weight: 500;
+  color: var(--bg-color);
+  margin-left: 0.3125rem;
+  text-decoration: underline;
+}
+
+.top h1 {
+  color: var(--bg-color);
+  font-size: 0.1875rem;
+  text-align: center;
+  padding: 0.625rem 0 1.875rem 0;
+}
+
+.two-forms {
+  display: flex;
+  gap: 0.3125rem;
+}
+
+.field {
+  font-size: 0.9375rem;
+  background: rgba(240, 240, 240, 0.163);
+  color: #020000;
+  height: 3.125rem;
+  width: 100%;
+  padding: 0 0.625rem 0 2.8125rem;
+  border: 0.125rem solid black;
+  border-radius: 1.875rem;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.field:hover,
+.field:focus {
+  color: #ffff;
+  background: rgb(0, 0, 0);
+  border: 0.125rem solid rgb(255, 255, 255);
+  transform: scale(1.0125);
+}
+
+::placeholder {
+  color: #210303;
+}
+
+:hover::placeholder {
+  color: #ffff;
+}
+
+.input-box i {
+  position: relative;
+  top: -2.1875rem;
+  left: 1.0625rem;
+  color: black;
+}
+
+:hover.input-box i {
+  color: rgb(255, 255, 255);
+}
+
+.submit {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: white;
+  height: 2.8125rem;
+  width: 100%;
+  border: none;
+  border-radius: 1.875rem;
+  outline: none;
+  background: black;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.submit:hover {
+  background: rgb(181, 95, 158);
+}
+
+.two-col {
+  display: flex;
+  justify-content: space-between;
+  color: var(--bg-color);
+  font-size: medium;
+  margin-top: 0.625rem;
+}
+
+.two-col .one {
+  display: flex;
+  gap: 0.15625rem;
+}
+
+.two-col a {
+  text-decoration: none;
+  color: black;
+}
+
+.two-col .two a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.signup-con {
+  position: absolute;
+  width: 31.25rem;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s ease-in-out;
+}
+
+.Copaste-cookie-plagiarism-container {
+  position: absolute;
+  top: 46.875rem;
+  left: 68.75rem;
+  font-size: 1.25rem;
+  font-weight: bolder;
+  color: black;
+}
+
+.result {
+  position: relative;
+  color: red;
+  font-size: small;
+}

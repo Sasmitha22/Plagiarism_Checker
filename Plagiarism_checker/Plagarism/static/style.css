@@ -1,0 +1,425 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins','sans-serif';
+  }
+
+:root{
+    --bg-color:black;
+    --text-color:white;
+}
+html {
+   
+    overflow-x:hidden;
+  }
+
+section{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top:120px;
+    height: 919px;
+    mix-blend-mode: normal;
+    opacity: 0.9;
+}
+
+body{
+  background:linear-gradient(118.98deg, #000000 -2.11%, #6737C1 63.58%);
+}
+
+.logo {
+    font-size: 2.5rem;
+    color:black;
+    font-weight:900;
+    cursor:default;
+  }
+
+.logoimg {
+    position: absolute;
+    width: 88px;
+    height: 81px;
+    left:50px;
+    top: calc(50% - 81px/2 - 0.5px);
+    z-index: 30;
+}
+  
+header{
+    position: fixed;
+    top: 0;
+    left:0;
+    width:100%;
+    padding: 2rem 9%;
+    background:#c4dcff;
+    height:100px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  
+  }
+
+  .navbar a {
+    font-size: 1.5rem;
+    color:black;
+    margin-left: 3.5rem;
+    transition: .3s;
+    padding: right 30px;
+    font-weight: bold;
+  }
+  
+  .navbar a:hover,
+  .navbar a.active {
+    color:lightseagreen;
+    transform: scale(0.2);
+    text-shadow: 2rem;
+  }
+
+
+/* ------------------------navbar----------------*/
+
+.signinimg{
+margin: 200px 20px 10px 30px;
+position: relative;
+z-index: 0;
+}
+
+.signin-con{
+position:absolute;
+width: 500px;
+display: flex;
+flex-direction: column;
+transition: .5s ease-in-out;
+}
+
+
+.form{
+position: absolute;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 700px;
+height: 500px;
+overflow: hidden;
+top:200px;
+left:1000px;
+z-index: 2;
+background-color:rgba(255,255,255,0.13);
+border-radius: 25px;
+border: 2px solid black;
+
+}
+
+
+.top span{
+color: var(--bg-color);
+font-size:medium;
+padding: 10px 0 0 130px;
+}
+
+.top span a{
+font-weight: 500;
+color: var(--bg-color);
+margin-left: 5px;
+text-decoration: underline;
+}
+
+.top h1{
+color: var(--bg-color);
+font-size: 3rem; 
+text-align: center;
+padding: 10px 0 30px 0;
+
+}
+
+.two-forms{
+display: flex;
+gap: 10px;
+}
+
+.field{
+font-size:15px;
+background: rgba(255,255,255,0.2);
+color: #fff;;
+height:50px;
+width:100%;
+padding:0 10px 0 45px;
+border:2px solid black;
+border-radius: 30px;
+outline:none;
+transition: .2s ease; 
+}
+
+
+.field:hover,.field:focus{
+background: black;
+border-radius: none;
+box-shadow: 3px 3px 3px 3px #0ef;
+}
+::-webkit-placeholder{
+color: var(--bg-color);
+}
+
+
+.input-box i{
+position: relative;
+top: -35px;
+left:17px;
+color:#0ef;
+}
+
+.submit{
+font-size:15px;
+font-weight: 500;
+color:white;
+height:45px;
+width:100%;
+border: none;
+border-radius: 30px;
+outline:none;
+background: var(--bg-color);
+cursor: pointer;
+transition: .3s ease-in-out;
+}
+
+.submit:hover{
+background: #0ef;
+box-shadow: 2px 2px 2px 2px #0ef;
+
+}
+
+.two-col{
+display: flex;
+justify-content: space-between;
+color: var(--bg-color);
+font-size: medium;
+margin-top:10px;
+
+}
+
+.two-col .one{
+display: flex;
+gap:5px;
+}
+
+.two-col a{
+text-decoration: none;
+color:black;
+}
+
+.two-col .two a:hover{
+cursor: pointer;
+text-decoration:underline;
+
+}
+
+.signup-con{
+
+position:absolute;
+width: 500px;
+display: flex;
+flex-direction: column;
+transition: .5s ease-in-out;
+
+}
+
+.shape{
+    background: linear-gradient(#1845ad,#23a2f6);
+    width: 1000px;
+    height: 100%;
+    position: absolute;
+    bottom: -200px;
+    left:-400px;
+    border-radius: 50%;
+    z-index: -1;
+}
+/*.shape:last-child{
+    background: linear-gradient(right,#ff512f,#f09819);
+    position: absolute;
+    right:-30px;
+    bottom:-80px;
+}*/
+
+.bigshape{
+    width: 1000px;
+    height: 100%;
+    background:linear-gradient(#1845ad,#23a2f6);
+    position: absolute;
+    top: -200px;
+    left:1500px;
+    border-radius: 50%;
+    z-index:-1;
+}
+
+/* ------------------sign in / sign up ----------------*/
+
+.home { 
+  padding: 10px 30px 10px 30px;
+  display: table-cell;
+  justify-content: center;
+  align-items: center;
+ 
+  
+}
+
+.home-content h3 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.home-content h1 {
+   font-size: 5.6rem;
+   font-weight: 700; 
+   line-height: 1.3;  
+   color: black;
+}
+
+
+.home-content p {
+  font-size: 1.6rem;
+  overflow-x: auto;
+  color:black;
+}
+
+.home-content {
+  margin: 350px 30px 0px 32px;
+  width:50%;
+  overflow-x:wrap ;
+  transform: scale(0.1rem);
+  cursor:default;
+}
+
+.pl{
+  color: var(--bg-color);
+  font-size: 3rem; 
+  text-align: center;
+  padding: 10px 0 30px 0;
+  top:20px;
+  left:30px;
+}
+
+.inputforplagarism{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  z-index: 2;
+  background-color:rgba(255,255,255,0.2);
+  border-radius: 25px;
+  border: 5px solid var(--bg-color);
+  padding: 30px 30px 30px 30px;
+}
+
+
+.headp{
+  color: var(--bg-color);
+  font-size: 40px; 
+  text-align: relative;
+  padding: 10px 30px 50px 0;
+  margin: 0px 20px 0px 10px;
+}
+
+.headingsec{
+  display: center;
+  align-items: center;
+  justify-items: center;
+  height:75px;
+  width:100%;
+  border-radius: 30px;
+  padding: 10px 600px 10px 650px;
+  border: 5px solid black;
+  margin-bottom: 10px;
+  background: rgba(255,255,255,0.2);
+}
+
+.headingsec .headingp{
+  font-size: 30px;
+  font-weight: bolder;
+  font-style: oblique;
+  
+}
+
+textarea{
+  position: relative;
+  height:300px;
+  width:700px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 10px;
+  border: 5px solid black;
+  margin:0px 20px 10px 0px;
+  overflow-x: auto;
+  transition: 0.2s ease;
+}
+
+.pboxes{
+  padding: 30px 20px 40px 20px;
+  border-radius: 2px;
+  align-items: center;
+  display: inline-block;
+}
+
+textarea:hover{
+  background-color: #ffff;
+  box-shadow: 2px 2px 2px 2px black;
+  transform: scale(1.02);
+}
+
+#fileinput{
+  position: relative;
+
+}
+
+.btn { 
+  display: inline-block;
+  background: black;
+  border-radius: 4rem;
+  box-shadow: 0 0 10px red;
+  font-size: 10px;
+  color:white;
+  font-weight: 600;
+  transition: .5s ease-out;
+  
+}
+
+.btn:hover{
+  box-shadow: none;
+}
+
+.inputfile{ 
+  border: 5px solid black;
+  border-radius: 50px;
+  padding:2px;
+  font-size:20px;
+  
+}
+
+.inputfile::-webkit-file-upload-button{
+  background: black ;
+  color:white;
+  padding:8px 16px;
+  border:None;
+  border-radius: 50px;
+
+}
+
+.inputfile:hover{ 
+  cursor:pointer;
+  background: white;
+  box-shadow: black;
+  transform: scale(1.02);
+  
+}
+
+.inputfile::-webkit-file-upload-button:hover{
+  background: black ;
+  cursor: pointer;
+}

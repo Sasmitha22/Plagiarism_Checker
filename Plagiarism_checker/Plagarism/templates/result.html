@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plagarism</title>
+    <link rel="stylesheet" href="/static/result.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="head">
+      <a class="logo">Copaste Cookie</a>
+      <nav class="navbar">
+        <a href="home" class="Home">Home</a>
+        <a href="about" class="about">About</a>
+        <a href="history" class="tool">History </a>
+        <a href="#" class="Loginlink">My Account</a>
+      </nav>
+    </header>
+    <section class="result">
+        <div class="container">
+            <h1 class="headh2">Result</h1>
+            <div class="textarea">
+                <div class="text">
+                    <h3 class="headh3">Document-1</h3>
+                    <p>{{txt1}}</p>
+                </div>
+                <div class="text">
+                   <h3 class="headh3">Document-2</h3>
+                    <p>{{txt2}}</p>
+                </div>
+
+            </div>
+            <div class="percentage">
+                <div class="boxes">
+                    <h2>Percentage:</h2>
+                    <h1>{{ans1}}%</h1>
+                </div>
+                <div class="boxes">
+                    <h2>Percentage:</h2>
+                    <h1>{{ans2}}%</h1>
+                </div>
+            </div>
+            <div class="submitbutton">
+                <input type="submit" class="submit" value="Finish" />
+            </div>
+        </div>
+    </section>
+  </body>
+</html>

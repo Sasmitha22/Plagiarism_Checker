@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plagarism</title>
+    <link rel="stylesheet" href="/static/plagarism.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="head">
+      <a class="logo">Copaste Cookie</a>
+      <nav class="navbar">
+        <a href="home" class="Home">Home</a>
+        <a href="about" class="about">About</a>
+        <a href="history" class="tool">History </a>
+        <a href="#" class="Loginlink">My Account</a>
+      </nav>
+    </header>
+    <section class="plagarism">
+      <div class="bigshape"></div>
+      <div class="shape"></div>
+      <form action="/plagiarism" method="POST" enctype="multipart/form-data">
+      <div class="inputforplagarism">
+        <div class="pboxes1">
+          <h2 class="headp">Text 1</h2>
+          <textarea
+            name="doc1"
+            id="doc1"
+            class="doc"
+            placeholder="Enter Your Text Here!"
+          ></textarea>
+
+          <div class="inputs">
+            <h2 class="headp">Document 2</h2>
+            <input
+              type="file"
+              name="file1"
+              id="fileinput"
+              placeholder="Enter File1"
+              class="inputfile"
+            />
+            <h2 class="headp">Url 1</h2>
+            <input
+              type="url"
+              name="url1"
+              id="fileinput"
+              class="urlinput"
+              placeholder="Enter url1"
+            />
+          </div>
+        </div>
+      </form>
+        <br />
+        <div class="pboxes2">
+          <h2 class="headp">Text 2</h2>
+          <textarea
+            name="doc2"
+            id="doc2"
+            class="doc"
+            placeholder="Enter Your Text Here!"
+          ></textarea>
+          <div class="inputs">
+            <h2 class="headp">Document 2</h2>
+            <input
+              type="file"
+              name="file2"
+              id="fileinput"
+              class="inputfile"
+              placeholder="Enter file2"
+            />
+            <h2 class="headp">Url 2</h2>
+            <input
+              type="url"
+              name="url2"
+              id="urlinput"
+              class="urlinput"
+              placeholder="Enter url2"
+            />
+          </div>
+        </div>
+        <div class="submitbutton">
+          <input type="submit" class="submit" value="Check Plagarism" />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

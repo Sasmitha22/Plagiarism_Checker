@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plagarism</title>
+    <link rel="stylesheet" href="/static/signup.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="head">
+      <a class="logo">Copaste Cookie</a>
+      <nav class="navbar">
+        <a href="home" class="Home">Home</a>
+        <a href="about" class="about">About</a>
+        <a href="#" class="tool">Team </a>
+        <a href="signin" class="Loginlink">Log in</a>
+      </nav>
+    </header>
+
+    <section class="login-box">
+      <div class="signinimg">
+        <img src="/static/images/frame2.svg" alt=" plagarism" />
+      </div>
+      <div class="bigshape"></div>
+      <div class="shape"></div>
+      <div class="Copaste-cookie-plagiarism-container">
+        <p class="Copaste-cookie-plagiarism">
+          Copaste cookie plagiarism checker detects plagiarism in your
+        </p>
+        <p class="Copaste-cookie-plagiarism">
+          text checks for other writing issues and helps you build citations
+        </p>
+      </div>
+      <form class="form" method="POST" action="signup">
+        <div class="signup-con" id="signup">
+          <div class="top">
+            <span>Have an Account?<a href="signin">Sign in</a></span>
+            <h1>Sign Up</h1>
+          </div>
+          <div class="two-forms">
+            <div class="input-box">
+              <input
+                type="text"
+                class="field"
+                name="firstname"
+                placeholder="Firstname"
+              />
+              <i class="bx bx-user"></i>
+            </div>
+            <div class="input-box">
+              <input
+                type="text"
+                class="field"
+                name="lastname"
+                placeholder="Lastname"
+              />
+              <i class="bx bx-user"></i>
+            </div>
+          </div>
+          <div class="input-box">
+            <input
+              type="text"
+              class="field"
+              name="email"
+              placeholder="E-Mail"
+            />
+            <i class="bx bx-envelope"></i>
+          </div>
+          <div class="input-box">
+            <input
+              type="password"
+              class="field"
+              name="password"
+              placeholder="Password"
+            />
+            <i class="bx bx-lock-alt"></i>
+          </div>
+          <div class="input-box">
+            <input type="submit" class="submit" value="register" />
+          </div>
+          <div class="two-col">
+            <div class="one">
+              <input type="radio" class="reg-checkbox" />
+              <label for="reg-checkbox">Remember Me</label>
+            </div>
+            <div class="two">
+              <a href="#" class="tc">Terms and Conditions</a>
+            </div>
+          </div>
+          <div class="result"><p>{{result}}</p></div>
+        </div>
+
+      </form>
+    </section>
+  </body>
+</html>

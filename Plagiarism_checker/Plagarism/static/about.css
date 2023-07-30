@@ -1,0 +1,133 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', 'sans-serif';
+}
+
+:root {
+  --bg-color: linear-gradient(118.98deg, #000000 -2.11%, #6737C1 63.58%);
+  --text-color: white;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+section {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 7.5rem; /* 120px converted to rem */
+  height: 100vh;
+  mix-blend-mode: normal;
+  opacity: 0.9;
+}
+
+body {
+  background-image: url(/static/images/mesh-757.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  cursor: default;
+}
+
+.logoimg {
+  position: absolute;
+  width: 5.5rem; /* 88px converted to rem */
+  height: 4.6875rem; /* 81px converted to rem */
+  left: 3.125rem; /* 50px converted to rem */
+  top: calc(50% - 4.6875rem/2 - 0.5px);
+  z-index: 30;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background: none;
+  height: 6.25rem; /* 100px converted to rem */
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.navbar a {
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  margin-left: 3.5rem;
+  transition: 0.3s;
+  padding-right: 1.875rem; /* 30px converted to rem */
+  font-weight: bold;
+}
+
+.navbar {
+  margin-right: 6.875rem; /* 110px converted to rem */
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: rgba(251, 128, 255, 0.623);
+  transform: scale(0.2);
+  text-shadow: 2rem;
+}
+
+.con {
+  position: relative;
+  padding: 1.25rem; /* 20px converted to rem */
+  width: 90%;
+  margin: 1.25rem; /* 20px converted to rem */
+}
+
+h2 {
+  font-size: 2.5rem; /* 40px converted to rem */
+}
+
+p {
+  font-size: 0.9375rem; /* 15px converted to rem */
+}
+
+footer {
+  height: 25rem; /* 400px converted to rem */
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  position: absolute;
+  bottom: -29rem;
+  left: 0;
+  padding: 1rem;
+  border: 0.1875rem solid black;
+}
+
+.boxes-foot {
+  position: relative;
+  width: 50%;
+  display: inline;
+  padding: 1rem;
+}
+
+.links {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.links a {
+  color: black;
+  display: block;
+}

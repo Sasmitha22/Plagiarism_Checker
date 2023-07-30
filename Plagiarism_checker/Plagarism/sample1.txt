@@ -1,0 +1,20 @@
+Von-Neumann Model:
+Von-Neumann proposed his computer architecture design in 1945 which was later known as Von-Neumann Architecture. It consisted of a Control Unit, Arithmetic, and Logical Memory Unit (ALU), Registers and Inputs/Outputs.
+
+Von Neumann architecture is based on the stored-program computer concept, where instruction data and program data are stored in the same memory. This design is still used in most computers produced today.
+
+A Von Neumann-based computer:
+Uses a single processor.
+Uses one memory for both instructions and data.
+Executes programs following the fetch-decode-execute cycle.
+
+Arithmetic and Logic Unit (ALU):
+The Arithmetic and Logic Unit (ALU) performs the required micro-operations for executing the instructions. In simple words, ALU allows arithmetic (add, subtract, etc.) and logic (AND, OR, NOT, etc.) operations to be carried out.
+
+Control Unit:
+The Control Unit of a computer system controls the operations of components like ALU, memory and input/output devices.
+
+The Control Unit consists of a program counter that contains the address of the instructions to be fetched and an instruction register into which instructions are fetched from memory for execution.
+
+Registers:
+Registers refer to high-speed storage areas in the CPU. The data processed by the CPU are fetched from the register.

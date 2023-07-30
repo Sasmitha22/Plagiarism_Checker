@@ -1,0 +1,324 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  outline: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --bg-color: linear-gradient(118.98deg, #000000 -2.11%, #6737C1 63.58%);
+  --text-color: white;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+section {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 100px;
+  height: 57.4375rem; /* 919px converted to rem */
+  mix-blend-mode: normal;
+  opacity: 0.9;
+}
+
+body {
+  background-image: url(/static/images/mesh-757.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo {
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  cursor: default;
+}
+
+.logoimg {
+  position: absolute;
+  width: 5.5rem; /* 88px converted to rem */
+  height: 5.0625rem; /* 81px converted to rem */
+  left: 3.125rem; /* 50px converted to rem */
+  top: calc(50% - 5.0625rem / 2 - 0.03125px); /* 81px converted to rem */
+  z-index: 30;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 9%;
+  background: none;
+  height: 6.25rem; /* 100px converted to rem */
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.navbar a {
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  margin-left: 3.5rem;
+  transition: 0.3s;
+  padding-right: 1.875rem; /* 30px converted to rem */
+  font-weight: bold;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: lightseagreen;
+  transform: scale(0.2);
+  text-shadow: 2rem;
+}
+
+.image {
+  position: absolute;
+  top: 31.25rem; /* 500px converted to rem */
+  left: 2.5rem; /* 40px converted to rem */
+  width: 50%;
+  height: 43.75rem; /* 700px converted to rem */
+}
+
+h2 {
+  position: relative;
+  font-size: 1.875rem; /* 30px converted to rem */
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+}
+
+.inputforplagarism {
+  position: absolute;
+  top: 4.6875rem; /* 75px converted to rem */
+  left: 13.125rem; /* 210px converted to rem */
+  background-color: rgba(255, 255, 255, 0.13);
+  box-shadow: 0.125rem 0.125rem 0.125rem 0.125rem rgba(255, 255, 255, 0.13);
+  border: 0.125rem solid white;
+  width: 93.75rem; /* 1500px converted to rem */
+  height: 43.75rem; /* 700px converted to rem */
+  border-radius: 1.25rem; /* 20px converted to rem */
+  padding: 3.125rem; /* 50px converted to rem */
+}
+
+.pboxes1 {
+  position: absolute;
+  top: 4.6875rem; /* 75px converted to rem */
+  left: 3.125rem; /* 50px converted to rem */
+  background: linear-gradient(rgba(255, 255, 255, 0.334), rgba(255, 167, 226, 0.556));
+  box-shadow: 0.125rem 0.125rem 0.125rem 0.125rem rgba(255, 255, 255, 0.13);
+  border: #000000;
+  width: 45%;
+  height: 31.25rem; /* 500px converted to rem */
+  padding: 1.25rem 3.125rem; /* 20px converted to rem */
+  border-radius: 1.25rem; /* 20px converted to rem */
+  border: rgba(255, 255, 255, 0.13);
+  align-items: center;
+}
+
+.pboxes2 {
+  position: absolute;
+  top: 4.6875rem; /* 75px converted to rem */
+  left: 48.4375rem; /* 770px converted to rem */
+  background: linear-gradient(rgba(255, 255, 255, 0.334), rgba(255, 167, 226, 0.556));
+  box-shadow: 0.125rem 0.125rem 0.125rem 0.125rem rgba(255, 255, 255, 0.13);
+  border: #000000;
+  width: 45%;
+  height: 31.25rem; /* 500px converted to rem */
+  padding: 1.25rem 3.125rem; /* 20px converted to rem */
+  border-radius: 1.25rem; /* 20px converted to rem */
+  border: rgba(255, 255, 255, 0.13);
+}
+
+.doc {
+  position: relative;
+  height: 14.25rem; /* 500px converted to rem */
+  width: 95%;
+  overflow-y: scroll;
+  border-radius: 0.3125rem; /* 5px converted to rem */
+  background-color: rgba(255, 255, 255, 0.13);
+  color: #000000;
+  border: 0.125rem solid #ffffff;
+  padding: 0.625rem; /* 10px converted to rem */
+}
+
+.doc::placeholder {
+  color: rgb(0, 0, 0);
+}
+
+.inputfile::-webkit-file-upload-button {
+  background: black;
+  color: white;
+  padding: 0.5rem 1rem; /* 8px 16px converted to rem */
+  border: 0.125rem solid white;
+  border-radius: 3.125rem; /* 50px converted to rem */
+}
+
+.inputfile:hover {
+  cursor: pointer;
+  background: white;
+  box-shadow: black;
+  transform: scale(1.02);
+}
+
+.inputfile::-webkit-file-upload-button:hover {
+  background: black;
+  cursor: pointer;
+}
+
+.submitbutton {
+  position: relative;
+  margin-top: 3.125rem; /* 50px converted to rem */
+  margin-left: 10.625rem; /* 170px converted to rem */
+}
+
+.submit {
+  position: absolute;
+  left: 12.5rem; /* 200px converted to rem */
+  top: 31.25rem; /* 500px converted to rem */
+  font-size: 0.9375rem; /* 15px converted to rem */
+  font-weight: 500;
+  color: white;
+  height: 2.8125rem; /* 45px converted to rem */
+  width: 50%;
+  border: none;
+  border-radius: 1.875rem; /* 30px converted to rem */
+  background: black;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.submit:hover {
+  background: palevioletred;
+}
+
+.inputfile {
+  border: 0.125rem solid rgb(255, 255, 255);
+  border-radius: 3.125rem; /* 50px converted to rem */
+  padding: 0.125rem; /* 2px converted to rem */
+  font-size: 0.9375rem; /* 15px converted to rem */
+}
+
+.inputs {
+  position: relative;
+}
+
+.urlinput {
+  position: relative;
+  width: 95%;
+  height: 2.5rem; /* 40px converted to rem */
+  background-color: rgba(255, 255, 255, 0.13);
+  border-radius: 1.25rem; /* 20px converted to rem */
+  padding: 0.625rem 0.625rem; /* 10px converted to rem */
+  border: 0.125rem solid white;
+}
+
+.urlinput::placeholder {
+  color: #000000;
+}
+
+.plimg1 {
+  position: absolute;
+  left: 3.125rem; /* 50px converted to rem */
+  bottom: 12.5rem; /* 200px converted to rem */
+}
+
+.plimg2 {
+  position: absolute;
+  right: -1.25rem; /* -20px converted to rem */
+  top: 25rem; /* 400px converted to rem */
+  height: 31.25rem; /* 500px converted to rem */
+}
+
+footer {
+  height: 25rem; /* 400px converted to rem */
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0.625rem 0.625rem 0.625rem 0.625rem; /* 1rem converted to rem */
+  border: 0.1875rem solid black;
+}
+
+.boxes-foot {
+  position: relative;
+  width: 50%;
+  display: inline;
+  padding: 0.625rem 0.625rem 0.625rem 0.625rem; /* 1rem converted to rem */
+}
+
+.boxes-foot h3 {
+  position: relative;
+  font-size: 1.5625rem; /* 25px converted to rem */
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+  margin-bottom: 1.25rem; /* 20px converted to rem */
+}
+
+.boxes-foot h4 {
+  position: relative;
+  font-size: 1.125rem; /* 18px converted to rem */
+  color: rgb(0, 0, 0);
+  font-weight: 100;
+  margin-bottom: 1.25rem; /* 20px converted to rem */
+}
+
+.boxes-foot a {
+  position: relative;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 0.9375rem; /* 15px converted to rem */
+  font-weight: 100;
+}
+
+.boxes-foot a:hover {
+  color: rgb(110, 110, 110);
+}
+
+img {
+  width: 5.0625rem; /* 81px converted to rem */
+  height: 5.0625rem; /* 81px converted to rem */
+  position: relative;
+  border-radius: 50%;
+  border: 0.125rem solid black;
+}
+
+#footer {
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 2.5rem; /* 40px converted to rem */
+  height: 2.5rem; /* 40px converted to rem */
+  position: relative;
+  bottom: 0;
+  left: 0;
+  font-size: 0.9375rem; /* 15px converted to rem */
+  font-weight: 500;
+}
+
+#footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.9375rem; /* 15px converted to rem */
+  font-weight: 500;
+  padding-right: 0.3125rem; /* 5px converted to rem */
+  padding-left: 0.3125rem; /* 5px converted to rem */
+}
+
+#footer a:hover {
+  color: rgb(160, 160, 160);
+}
+
